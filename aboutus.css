@@ -1,0 +1,104 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #297492;
+    color:rgb(249, 253, 253);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #031f3b;
+    color: #f9fafa;
+    padding: 40px 0;
+    text-align: cener;
+}
+
+h1 {
+    font-size: 3.0rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Mission & Vision Section */
+.mission, .vision {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+}
+
+.mission:last-child, .vision:last-child {
+    margin-right: 0;
+}
+
+/* Values Section */
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #faf5f5;
+}
+
+/* Team Section */
+.team-members {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member {
+    text-align: center;
+    width: 30%;
+}
+
+.member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}

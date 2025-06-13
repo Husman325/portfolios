@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Usman | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 10px;
+    }
+
+    header {
+      background: rgba(30, 58, 138, 0.9);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-top: 20px;
+    }
+
+    nav {
+      background: rgba(30, 41, 59, 0.9);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+      font-weight: 600;
+    }
+    nav ul li a:hover {
+      background: #626b79;
+    }
+    button {
+     background: #2461c4;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 4px;
+     font-weight: 600;
+    }
+    button:hover {
+          background :#0f172a;
+    }
+
+    section {
+      padding: 40px 0;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .skill-bar {
+      background: #334155;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .skill-bar span {
+      display: block;
+      background: #3b82f6;
+      padding: 8px 16px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .project {
+      background: #1e293b;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+    }
+
+    .certification {
+      background: #1e2d47;
+      padding: 20px;
+      margin-top: 20px;
+      border-left: 5px solid #3b82f6;
+      border-radius: 8px;
+    }
+    .certification a {
+            background: #78839b;
+    }
+
+    form input,
+    form textarea {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #475569;
+      border-radius: 4px;
+      background: #132a5e;
+      color: white;
+    }
+
+    form button {
+      background: #3b82f6;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    form button:hover {
+      background: #2563eb;
+    }
+
+    footer {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .footer-icons {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    .footer-icons i {
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Muhammad Usman</h1>
+      <h3>FULL STACK WEB DEVELOPER</h3>
+      <img src="D:\Usman data\UET CP\Semester 02\pic.jpg" alt="Muhammad Usman Profile Picture" />
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#Experience">Experience</a></li>
+    </ul>
+  </nav>
+<nav> 
+  <ul>
+    <li><a href="#contact"> Hire me</a> </li>
+    <li><a href="#usman-cv.pdf">View CV</a></li>
+  </ul>
+</nav>
+<div class="container">
+  <button type="Download CV">
+  <a href="C:\Users\Imran\Downloads\CV.pdf" download>Download CV</a></button>
+</div>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am Muhammad Usman, a passionate Computer Engineer with expertise in full stack development, freelancing, and emerging tech. I strive to bring innovation and simplicity to my projects, with a focus on clean code and user-friendly design.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-bar"><span style="width: 95%">HTML - 95%</span></div>
+        <div class="skill-bar"><span style="width: 90%">CSS - 90%</span></div>
+        <div class="skill-bar"><span style="width: 85%">JavaScript - 85%</span></div>
+        <div class="skill-bar"><span style="width: 80%">React - 80%</span></div>
+        <div class="skill-bar"><span style="width: 75%">Node.js - 75%</span></div>
+        <div class="skill-bar"><span style="width: 90%">C++ - 90%</span></div>
+        <div class="skill-bar"><span style="width: 80%">Python - 80%</span></div>
+        <div class="skill-bar"><span style="width: 85%">Git & GitHub - 85%</span></div>
+        <div class="skill-bar"><span style="width: 90%">Responsive Design - 90%</span></div>
+        <div class="skill-bar"><span style="width: 70%">Firebase - 70%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>ATM Simulator</h3>
+        <p>A C++ based ATM simulator with file handling and user-friendly menu.</p>
+      </div>
+      <div class="project">
+        <h3>Temperature Detector</h3>
+        <p>Electronics project using BC547 transistor and thermistor to trigger fan on heat detection.</p>
+      </div>
+      <div class="project">
+        <h3>Netflix Clone Website</h3>
+        <p>A responsive front-end Netflix-style UI clone using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>Freelance Services Website</h3>
+        <p>A professional-looking website to showcase and offer freelance digital services with a clean UI.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="certification">
+        <h3>Responsive Web Design</h3>
+        <p>FreeCodeCamp &mdash; Completed a 300-hour certification covering HTML, CSS, and responsive design techniques.</p>
+      </div>
+      <div class="certification">
+        <h3>JavaScript Algorithms and Data Structures</h3>
+        <p>FreeCodeCamp &mdash; Mastered key concepts of JavaScript programming including ES6, functions, and object-oriented programming.</p>
+      </div>
+      <div class="certification">
+        <h3>Foundations of Freelancing</h3>
+        <p>DigiSkills.pk &mdash; Learned freelancing skills, client communication, and project delivery on platforms like Fiverr and Upwork.</p>
+      </div>
+      <div class="certification">
+        <h3>Foundations of Freelancing</h3>
+        <p>DigiSkills.pk &mdash; Learned freelancing skills, client communication, and project delivery on platforms like Fiverr and Upwork.</p>
+        <a href="https://digiskills.pk/Certificate/UserCertificate" target="_blank">View Certificate</a>
+      </div>
+      <div class="certification">
+        <h3>Google Ads Expert</h3>
+        <p>Coursera &mdash; Completed digital marketing techniques as part of the Google Ads professional certification program.</p>
+        <a href="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~6CU2TQZTNYIT/CERTIFICATE_LANDING_PAGE~6CU2TQZTNYIT.jpeg" target="_blank">View Certificate</a>
+      </div>
+      <div class="certification">
+        <h3>SEO Expert</h3>
+        <p>Coursera &mdash; Completed SEO digital marketing techniques as part of the Google Ads professional certification program.</p>
+        <a href="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~BTI0CRZF3FOI/CERTIFICATE_LANDING_PAGE~BTI0CRZF3FOI.jpeg" target="_blank">View Certificate</a>
+    </div>
+  </section>
+  <section id="My Working">
+    <div class="container">
+        <h2>My Working</h2>
+        <p>I have created many front end websites like health facilities, for fittness purpose i have created a GYM front end page its 
+          coding is in HTML and CSS and  also i have  used a little  bbit java script in it. I have created  many designing websites
+          and these are very user friendly my after that my  clients give me more orders to build like these type of user friendly websites  
+          clone.
+        </p>
+        <h3> Health purpose</h3>
+        <p> I have build this website using  Html and Css and it is a very user friendly website .</p>
+        <a href="file:///D:/THINKOPEDIA.html"><button type="open now">Open Now</button></a>
+        <h3>Experience</h3>
+        <a href="https://www.coursera.org/learner/usman-325" target="_blank"><button type="My Working">My Working</button></a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Muhammad Usman. All rights reserved.</p>
+      <div class="footer-icons">
+        📧 hausman325@gmail.com &nbsp; | &nbsp; 📞 +92-325-1513887
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('The message has been sent to  muhammad usman!');
+      this.reset();
+    });
+
+    const sections = document.querySelectorAll('section');
+    const options = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
